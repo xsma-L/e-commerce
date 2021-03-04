@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap');
+
+/*
+LOGIN PAGE
+*/
+
+.head-title {
+  margin: 21.4333px 0;
+}
+
+.head-title a {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.head-title2 {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.head-title2 p {
+  padding: 12px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.block-login {
+  width: 35%;
+  margin: 36px auto;
+}
+
+.block-login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-login .error {
+  margin: 0 auto;
+  color: #e03a3e;
+  font-weight: bold;
+}
+
+.block-login form input {
+  width: 80%;
+  margin: 0 auto 24px auto;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 12px;
+}
+
+.block-login form a {
+  width: 24%;
+  margin: 0 auto 24px auto;
+  color: black;
+}
+
+.block-login form button {
+  width: 50%;
+  margin: 0 auto;
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.block-login form button:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/*
+RESPONSIVE - LOGIN PAGE
+*/
+
+@media screen and (max-width: 900px) {
+  .head-title2 {
+    width: 100%;
+  }
+
+  .block-login {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .block-login form a {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .block-login form a {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .block-login form a {
+    width: 50%;
+  }
+}
+
+/*
+REGISTER PAGE
+*/
+
+.block-register {
+  width: 40%;
+  margin: 10px auto;
+}
+
+.block-register select {
+  border: none;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.block-register input {
+  padding: 8px;
+}
+
+.block-register .infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.block-register .infos2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.block-register .infos3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block-register button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  border: 2px solid white;
+  transition: 0.5s;
+}
+
+.block-register button:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+/*
+RESPONSIVE - REGISTER PAGE
+*/
+
+@media screen and (max-width: 900px) {
+  .block-register {
+    width: 80%;
+  }
+}

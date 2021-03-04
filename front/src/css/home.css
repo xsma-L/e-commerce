@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap');
+
+body {
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+/*
+NAVBAR - HEAD
+*/
+
+.navbar-head {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+}
+
+.navbar-head div {
+  width: 33.33%;
+}
+
+.navbar-head .navbar-search {
+  text-align: center;
+}
+
+.navbar-head .navbar-search input {
+  height: 30px;
+  padding: 2px 2px 2px 8px;
+  font-size: 15px;
+  border: none;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 3.75rem 0 0 3.75em;
+  margin-left: 36px;
+}
+
+.navbar-head .navbar-search input::placeholder {
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.navbar-head .navbar-search button {
+  padding: 8px 9px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 0 3.75rem 3.75em 0;
+  transition: 0.3s;
+}
+
+.navbar-head .navbar-search button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.navbar-head .navbar-title {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 21.4333px 0;
+}
+
+.navbar-head .navbar-title a {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-head .navbar-tools {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-head .navbar-tools i {
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.navbar-head .navbar-tools i:hover {
+  cursor: pointer;
+}
+
+/*
+RESPONSIVE NAVBAR - HEAD
+*/
+
+@media screen and (max-width: 1114px) {
+  .navbar-head .navbar-search input {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .navbar-head {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .navbar-head .navbar-search input {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .navbar-head {
+    display: block;
+  }
+
+  .navbar-head div {
+    width: 100%;
+  }
+
+  .navbar-head .navbar-search {
+    margin-top: 10px;
+  }
+}
+
+/*
+NAVBAR - SIDE USER
+*/
+
+.navbar-sideUser, .navbar-sideLogged {
+  height: 100%;
+  transition: 1s;
+}
+
+.navbar-sideUser .navbar-bodyUser-left,
+.navbar-sideLogged .navbar-bodyLogged-left {
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.navbar-sideUser .navbar-bodyUser-left:hover,
+.navbar-sideLogged .navbar-bodyLogged-left:hover {
+  cursor: pointer;
+}
+
+.navbar-sideUser .navbar-bodyUser-right,
+.navbar-sideLogged .navbar-bodyLogged-right {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navbar-sideUser .navbar-bodyUser-right h1,
+.navbar-sideLogged .navbar-bodyLogged-right h1 {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.navbar-sideUser .navbar-bodyUser-right i:hover,
+.navbar-sideLogged .navbar-bodyLogged-right i:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.navbar-sideUser .navbar-bodyUser-title,
+.navbar-sideLogged .navbar-bodyLogged-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.navbar-sideUser .navbar-bodyUser-content {
+  height: 80%;
+}
+
+.navbar-sideUser .navbar-bodyUser-content .login {
+  height: 50%;
+  background: black;
+}
+
+.navbar-sideUser .navbar-bodyUser-content .register {
+  height: 50%;
+  background: white;
+}
+
+.navbar-sideUser .navbar-bodyUser-content .login a {
+  width: 20%;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 51%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 6px 12px;
+  transition: 0.5s;
+}
+
+.navbar-sideUser .navbar-bodyUser-content .login a:hover {
+  color: black;
+  background: white;
+}
+
+.navbar-sideUser .navbar-bodyUser-content .register a {
+  width: 20%;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 51%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 6px 12px;
+  transition: 0.5s;
+}
+
+.navbar-sideUser .navbar-bodyUser-content .register a:hover {
+  color: white;
+  background: black;
+}
+
+.content-actions {
+  align-items: baseline;
+}
+
+.navbar-sideLogged .navbar-bodyLogged-content {
+  padding: 20px 0 40px 0;
+  font-size: 18px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.navbar-sideLogged .navbar-bodyLogged-content a {
+  background: white;
+  color: black;
+  padding: 12px;
+  border: 2px solid black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navbar-sideLogged .navbar-bodyLogged-content a:hover {
+  background: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.logout-btn {
+  background: black;
+  color: white;
+  padding: 15px;
+  border: 2px solid white;
+  transition: 0.5s;
+  margin: 20px auto;
+}
+
+.logout-btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+/*
+RESPONSIVE NAVBAR - SIDE USER
+*/
+
+@media screen and (max-width: 1500px) {
+  .navbar-sideUser .navbar-bodyUser-right,
+  .navbar-sideLogged .navbar-bodyLogged-right {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .navbar-sideUser .navbar-bodyUser-right,
+  .navbar-sideLogged .navbar-bodyLogged-right {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .navbar-sideUser .navbar-bodyUser-right,
+  .navbar-sideLogged .navbar-bodyLogged-right {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar-sideUser .navbar-bodyUser-right,
+  .navbar-sideLogged .navbar-bodyLogged-right {
+    width: 100%;
+  }
+
+  .navbar-sideUser .navbar-bodyUser-content .login a,
+  .navbar-sideUser .navbar-bodyUser-content .register a {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-sideUser .navbar-bodyUser-content .login a,
+  .navbar-sideUser .navbar-bodyUser-content .register a {
+    width: 25%;
+  }
+}
+
+/*
+NAVBAR - SIDE ELSE
+*/
+
+.navbar-sideCart {
+  height: 100%;
+  transition: 1s;
+}
+
+.navbar-sideCart .navbar-bodyCart-left {
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.navbar-sideCart .navbar-bodyCart-left:hover {
+  cursor: pointer;
+}
+
+.navbar-sideCart .navbar-bodyCart-right {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navbar-sideCart .navbar-bodyCart-right h1 {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.navbar-sideCart .navbar-bodyCart-right i:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.navbar-sideCart .navbar-bodyCart-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.navbar-sideCart .cart-element {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  font-size: 17px;
+}
+
+.navbar-sideCart .cart-element img {
+  width: 47%;
+  margin-right: 10px;
+}
+
+.navbar-sideCart .cart-element .element-infos {
+  width: 50%;
+}
+
+.navbar-sideCart .cart-element .element-infos p b {
+  text-transform: uppercase;
+}
+
+.navbar-sideCart .cart-element .element-infos a {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  padding: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navbar-sideCart .cart-element .element-infos a:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.navbar-sideCart .navbar-bodyCart-right .prix {
+  background: black;
+  text-align: center;
+  padding: 12px 0px;
+}
+
+.navbar-sideCart .navbar-bodyCart-right .prix a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-sideCart .navbar-bodyCart-right .prix i:hover {
+  color: white;
+}
+
+/*
+RESPONSIVE NAVBAR - SIDE ELSE (A FAIRE QUAND PANIER FAIT)
+*/
+
+@media screen and (max-width: 1500px) {
+  .navbar-sideFav .navbar-bodyFav-right,
+  .navbar-sideCart .navbar-bodyCart-right {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .navbar-sideFav .navbar-bodyFav-right,
+  .navbar-sideCart .navbar-bodyCart-right {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .navbar-sideFav .navbar-bodyFav-right,
+  .navbar-sideCart .navbar-bodyCart-right {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar-sideFav .navbar-bodyFav-right,
+  .navbar-sideCart .navbar-bodyCart-right {
+    width: 100%;
+  }
+}
+
+/*
+NAVBAR - MENU
+*/
+
+.navbar-menu {
+  width: 60%;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 3.75em 3.75em 0 0;
+  /* border-bottom: 2px solid black; */
+}
+
+.navbar-menu a {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  padding: 12px 0;
+  transition: 0.5s;
+}
+
+.navbar-menu a:hover {
+  font-weight: bold;
+  color: #3A8EBA;
+}
+
+.navbar-menu .active {
+  font-weight: bold;
+  color: #3A8EBA;
+}
+
+/*
+RESPONSIVE NAVBAR - MENU
+*/
+
+@media screen and (max-width: 950px) {
+  .navbar-menu {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .navbar-menu a {
+    font-size: 15px;
+  }
+}
+
+/*
+HOME - BANNER
+*/
+
+.home-banner {
+  width: 60%;
+  padding: 20px 0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.home-banner img {
+  width: 100%;
+}
+
+.home-banner .banner-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.home-banner .banner-description p {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.home-banner .banner-description a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  background: black;
+  border: 2px solid white;
+  border-radius: 3.75em;
+  transition: 0.5s;
+}
+
+.home-banner .banner-description a:hover {
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
+
+/*
+RESPONSIVE HOME - BANNER
+*/
+
+@media screen and (max-width: 950px) {
+  .home-banner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home-banner .banner-description p,
+  .home-banner .banner-description a {
+    font-size: 15px;
+  }
+}
+
+/*
+HOME - CONTENT
+*/
+
+.home-wallpaper {
+  background: #CECECE;
+  padding: 20px 0px;
+}
+
+.home-content {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.home-content .content {
+  width: 22%;
+}
+
+.home-content .content img {
+  width: 100%;
+}
+
+.home-content .content .content-description {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 6px 0;
+}
+
+.home-content .content .content-description p {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.home-content .content .content-description a {
+  color: #CECECE;
+  background: black;
+  padding: 8px;
+  text-decoration: none;
+  border: 2px solid #CECECE;
+  transition: 0.5s;
+}
+
+.home-content .content .content-description a:hover {
+  color: black;
+  background: #CECECE;
+  border: 2px solid black;
+}
+
+.home-infos {
+  background: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.home-infos p {
+  margin: 0;
+  padding: 12px 0;
+}
+
+/*
+RESPONSIVE HOME - CONTENT
+*/
+
+@media screen and (max-width: 770px) {
+  .home-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-content .content {
+    width: 47%;
+    margin-bottom: 20px;
+  }
+}

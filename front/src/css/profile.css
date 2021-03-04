@@ -1,0 +1,35 @@
+/*
+PROFILE PAGE
+*/
+
+.block-profil {
+  width: 55%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.block-profil h3 {
+  text-transform: uppercase;
+}
+
+.block-profil .identite .civilite {
+  text-transform: capitalize;
+}
+
+/*
+RESPONSIVE - PROFILE PAGE
+*/
+
+@media screen and (max-width: 900px) {
+  .block-profil {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .block-profil {
+    display: block;
+    text-align: center;
+  }
+}
